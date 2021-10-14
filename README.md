@@ -1,1 +1,5 @@
-This is jeremie first git project !
+
+git add
+git commit -m "something"
+git push
+git status
