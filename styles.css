@@ -1,0 +1,232 @@
+:root {
+  --main-text: black;
+  --main-bg: #f2f2f2;
+  --nav-bg: #1f203a;
+  --nav-text: #f0f0f0;
+  --nav-hover: #ffa54d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    width: auto;
+  height: auto;}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--main-text);
+  background-color: #fff;
+}
+
+main, section{
+  margin: 0 auto;
+  background-color: var(--main-bg);
+  width: 95%
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-text);
+}
+nav a {
+  color: var(--nav-text);
+}
+
+/* nav */
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  
+  background-color: var(--nav-bg);
+  
+}
+
+.nav-list {
+  display: flex;
+  margin-right: 2rem;
+}
+
+@media (min-width: 600px) {
+  .nav {
+    justify-content: flex-end;
+  }
+
+  .nav-list {
+    margin: 0 1rem;
+  }
+}
+
+.nav-list a {
+  display: block;
+  font-size: 2.2rem;
+  padding: 2rem;
+}
+
+.nav-list a:hover {
+  color: var(--nav-hover);
+  background: var(--hover-bg);
+}
+
+section {
+  width: 100%;
+}
+
+section:nth-of-type(1){
+  height: 120vh;
+}
+
+@media (min-width: 900px) {
+section:nth-of-type(1){
+  height: 100vh;
+}
+ 
+}
+
+@media (min-width: 1000px) {
+section:nth-of-type(1){
+  height: 80vh;
+}
+ 
+}
+
+#welcome-section div:nth-of-type(1) {
+ height: 34rem;
+ background-color: #fff;
+}
+
+#welcome-section p{
+  margin: 1rem 2.5rem;
+}
+
+article{
+  margin: 0 auto;
+}
+
+
+#welcome-section div:nth-of-type(2) {
+  background-image : url("https://cdn.dribbble.com/users/1086141/screenshots/13875438/sea_turtle-01_4x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  max-width: 50%;
+  height: 34rem;
+  margin-top: -10rem;
+  
+margin: -23rem auto 0;
+  border: solid var(--main-bg) 8px;
+  border-radius: 50% ;
+}
+
+#welcome-section article {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 90%;
+}
+
+#projects {
+  text-align: center;
+}
+
+#projects h2 {
+  margin-bottom: 1.5rem;
+}
+
+#projects div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 98%;
+  margin: 0 auto;
+}
+
+#projects a{
+  margin: 1.5rem;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: transform .2s;
+}
+
+#projects a:hover{
+  transform: scale(1.1);
+}
+
+@media (min-width: 600px) {
+  #projects div {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  #projects a{
+    width: 45%;
+    height: auto;
+  }
+}
+
+@media (min-width: 1000px) {
+  #projects a{
+    width: 30%;
+    height: auto;
+  }
+}
+  
+#projects a img {
+   max-width:100%;
+  height: auto;
+  max-height: 180.983px;
+  object-fit: contain;
+}
+
+#projects a div {
+  background-color: #fff;
+  text-align: center;
+  padding: 1rem 2rem;
+  border-top: 1px solid var(--main-bg);
+}
+
+#contact {
+  height: 20vh;
+}
+
+#contact h2 {
+  padding: 2rem 2rem 0 2rem;
+  text-align: center;
+}
+  
+#contact div{
+  padding-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fab{
+  margin-right: 1px;
+  padding: 0.5rem 0 0.5rem 0;
+}
