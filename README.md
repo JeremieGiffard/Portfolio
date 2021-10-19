@@ -1,10 +1,3 @@
-**Most usefull to remember**
--git add
 
--git commit -m "something"
 
--git push
-
--git status
-
-See live demo : https://jeremiegiffard.github.io/Portfolio/
+See live demo of my portfolio : https://jeremiegiffard.github.io/Portfolio/
