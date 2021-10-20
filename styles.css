@@ -118,15 +118,15 @@
   
   #welcome-section article #welcome-div{
     background-color: var(--main-bg);
-    margin: 1.5rem 0;
+    margin: 4rem 0 0.5rem 0;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
   }
 
   #welcome-section p{
-    margin: 0 2.5rem;
+    margin: 0.5rem 1.5rem;
   }
   
   article{
@@ -152,9 +152,17 @@
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    width: 90%;
+    width: 100%;
   }
   
+  @media (min-width: 600px) {
+    #welcome-section article #welcome-div{
+      margin-top: 2rem;
+      justify-content: space-around;
+    }
+  }
+
+
   #projects {
     text-align: center;
   }
